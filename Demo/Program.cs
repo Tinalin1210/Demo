@@ -12,7 +12,7 @@
             int rocYear = currentDateTime.Year - 1911;
 
             //D3 表示使用三位數顯示
-            string currentTimeROC = $"{rocYear:D3}{currentDateTime:MMdd HH:mm:ss.fff}";
+            string currentTimeROC = "${rocYear:D3}{currentDateTime:MMdd HH:mm:ss.fff}";  //$表示字串插值。
 
             Console.WriteLine(currentTimeROC);
         }
